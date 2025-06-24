@@ -1,0 +1,41 @@
+# Application Configuration
+app:
+  title: "Arabic LSTM Language Model"
+  description: "Interactive Arabic text prediction and generation"
+  version: "1.0.0"
+  debug: false
+
+# Model Configuration
+model:
+  name: "arabic-lstm"
+  path: "./models/pytorch_model.bin"
+  config_path: "./models/config.json"
+  tokenizer_path: "./models/tokenizer.json"
+  
+  # Model parameters
+  max_length: 30
+  temperature_range: [0.1, 2.0]
+  top_k_range: [1, 10]
+  sequence_length: 10
+
+# Interface Configuration
+interface:
+  theme: "soft"
+  rtl_support: true
+  custom_css: "./assets/style.css"
+  examples:
+    prediction:
+      - "اللغة العربية"
+      - "التعلم الآلي"
+      - "الذكاء الاصطناعي"
+      - "التكنولوجيا الحديثة"
+    generation:
+      - "اللغة العربية"
+      - "التعلم الآلي"
+      - "المستقبل"
+      - "التكنولوجيا"
+
+# Logging Configuration
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"

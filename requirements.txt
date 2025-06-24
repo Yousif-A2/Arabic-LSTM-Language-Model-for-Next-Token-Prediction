@@ -1,0 +1,15 @@
+# Core dependencies
+torch>=1.9.0,<2.0.0
+gradio>=4.0.0,<5.0.0
+numpy>=1.21.0,<2.0.0
+pyyaml>=6.0
+
+# Optional dependencies
+transformers>=4.20.0  # For potential model integration
+datasets>=2.0.0       # For data loading utilities
+
+# Development dependencies (only for local development)
+pytest>=7.0.0; extra == "dev"
+black>=22.0.0; extra == "dev"
+flake8>=5.0.0; extra == "dev"
+mypy>=0.991; extra == "dev"
