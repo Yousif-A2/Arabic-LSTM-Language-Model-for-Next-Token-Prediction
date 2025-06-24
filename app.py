@@ -2,6 +2,9 @@
 Arabic LSTM Language Model - Gradio Application
 Main entry point for the HuggingFace Spaces deployment
 """
+import os
+os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
+os.environ['OMP_NUM_THREADS'] = '1'
 
 import gradio as gr
 import yaml
