@@ -58,7 +58,7 @@ Try these Arabic phrases:
 - **Interface**: Gradio
 - **Language**: Arabic (العربية)
 - **Dataset**: OSCAR Arabic Corpus
-- **Vocabulary**: ~200 carefully selected Arabic words
+- **Vocabulary**: ~2000 carefully selected Arabic words
 
 ## 📚 Documentation
 
